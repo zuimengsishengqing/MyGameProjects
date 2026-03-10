@@ -4,27 +4,19 @@ Welcome to MyGameProjects! This document outlines the download and quick operati
 
 ## 🌟 About Me
 
+本人**中国科学技术大学** **少年班学院**  人工智能专业本科在读
 
+擅长Unity引擎开发，VR、AR创意实践应用。目前在Golden Eggs兼职做抖音、微信小游戏开发-程序。曾获全国大学生数学竞赛安徽省三等奖，参与TapTap聚光灯等多个GameJam活动，并在腾讯开局一课程序结课，参与了2025美国大学生数学建模竞赛。专注AI与游戏算法结合，致力于用技术实现创新交互体验。
 
-我是一名专注于游戏开发 / VR 开发 / 后端开发的开发者，拥有 XX 技术栈（如 Unity、C#、MongoDB、3D 建模等），以下是我完成的 5 个核心项目，涵盖 2D 在线游戏、动态视觉效果、数据库应用、VR 开发及 Unity 解谜游戏等方向。
+以下是我的 5 个核心项目，涵盖网络同步框架、节奏音乐类玩法、TapTap聚光灯GameJam、VR 开发及第一人称3d解谜游戏等方向。
 
 
 
 ## 📚 Project List
 
-### 1. CG_2DimensionOnlineGame (网络同步学习)
+### 1. dynamic dancer （音游+地图）
 
-#### 📥 下载链接
-
-[科大网盘](https://pan.ustc.edu.cn/share/index/068350d988484bf2a5d6)
-
-#### 🚀 快速操作
-
-1. 点击网盘链接，下载项目完整压缩包；
-2. 解压后打开对应开发工程（如 Unity 工程双击`*.unitypackage`导入 / 打开`Assets`目录）；
-3. 运行工程主入口脚本 / 场景，即可启动 2D 在线游戏核心逻辑演示。
-
-### 2. dynamic dancer （音游+地图）
+音乐节奏融合地图移动玩法的3D游戏项目  （Golden Eggs 兼职小游戏开发 ）
 
 #### 📥 下载链接
 
@@ -36,7 +28,26 @@ Welcome to MyGameProjects! This document outlines the download and quick operati
 2. 运行指定可执行文件 / 打开开发环境工程；
 3. 按提示操作即可查看动态舞者视觉效果。
 
-### 3. mongoclub (Meta 游戏)
+### 2. CG_2DimensionOnlineGame (网络同步学习)
+
+基于Socket框架的2D联机游戏项目，采用TCP协议实现房间系统和局内实时同步。
+
+#### 📥 下载链接
+
+[科大网盘](https://pan.ustc.edu.cn/share/index/068350d988484bf2a5d6)
+
+#### 🚀 快速操作
+
+1. 点击网盘链接，下载项目完整压缩包；
+2. 阅读项目的readme，需要先开服务器，再开客户端游玩。
+
+1. 
+
+### 3. mongoclub （Untitled Test）
+
+《非暴露测试》是一款创新的**Meta类**游戏，玩家从2D场景开始游玩，意外卡bug进入3D世界进行探索。本项目采用Unity引擎开发，融合了2D与3D双重视角，包含多样化的小游戏系统和沉浸式交互体验。
+
+**角色定位**：TapTap聚光灯GameJam开发项目 - 副程序 
 
 #### 📥 下载链接
 
@@ -63,6 +74,8 @@ Welcome to MyGameProjects! This document outlines the download and quick operati
 4. 运行 VR 场景，体验 3D 交互效果。
 
 ### 5. unity demo (Endless Escape 无尽逃脱)
+
+这是一款第一人称解密逃出密室游戏,玩家在逃脱过程中意外触发无尽循环。本项目为7天GameJam开发作品,实现了基础玩法流程和核心交互系统。
 
 #### 📥 下载链接
 
