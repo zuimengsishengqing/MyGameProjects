@@ -1,169 +1,82 @@
-# Dynamic Dancer
+# MyGameProjects
 
-音乐节奏融合地图移动玩法的3D游戏项目
+Welcome to MyGameProjects! This document outlines the download and quick operation guides for my key projects.
 
-## 项目简介
-
-Dynamic Dancer 是一款创新的节奏游戏，将传统音乐节奏玩法与地图移动机制相结合。玩家需要在音乐节拍上完成节奏判定，同时在动态生成的地图上进行移动和探索。
-
-## 核心玩法
-
-- **音乐节奏系统**：基于音乐节拍的Note判定，支持多种判定等级
-- **地图移动机制**：动态生成的地图包含多种地块类型（基础地块、障碍地块、移动地块、终点地块）
-- **关卡系统**：支持多个自定义关卡，每个关卡包含独立的地图和谱面
-- **评分系统**：实时评分和历史最高分记录
-
-## 技术特点
-
-### 游戏架构
-- **单例模式**：GameManager全局管理游戏状态和场景切换
-- **UI系统**：基于Panel的UI管理框架，支持动态界面切换
-- **数据持久化**：JSON格式存储地图数据、谱面数据和玩家成绩
-
-### 核心模块
-- **地图编辑器**：可视化编辑器，支持创建和测试自定义地图
-- **谱面编辑器**：实时录制和编辑音乐节奏谱面
-- **节奏判定系统**：精确的时机判定算法
-- **玩家移动系统**：基于地块类型的移动逻辑
-
-### 技术栈
-- **Unity引擎**：核心游戏引擎
-- **C#**：主要开发语言
-- **Unity Input System**：输入管理
-- **JSON序列化**：数据存储
-
-## 项目结构
-
-```
-Assets/
-├── Script/                          # 核心脚本目录
-│   ├── GameControll/               # 游戏全局控制
-│   │   └── GameManager.cs          # 游戏管理器（单例模式），管理场景切换、游戏状态
-│   ├── GameIn/                     # 游戏内逻辑
-│   │   ├── MapLoader.cs            # 地图加载器，从JSON加载地图数据并生成场景
-│   │   └── PlayerHealth.cs         # 玩家生命值系统
-│   ├── Map_Player/                 # 地图编辑器和玩家控制
-│   │   ├── MapEditorManager.cs     # 地图编辑器管理器，处理地块编辑和保存
-│   │   ├── MoveLandController.cs   # 移动地块控制器
-│   │   └── PlayerMovement.cs       # 玩家移动控制，处理地块间的移动逻辑
-│   ├── MusicTypeMaker/             # 谱面编辑器和节奏判定
-│   │   ├── SimpleChartRecorder.cs  # 简易谱面录制器
-│   │   ├── NoteMover.cs            # 音符移动控制
-│   │   ├── EffectFadeOut.cs        # 特效淡出效果
-│   │   ├── RhythmGamePlayer.cs     # 节奏游戏播放器，管理音乐和谱面
-│   │   └── JudgmentSystem.cs       # 判定系统，处理音符判定和评分
-│   ├── UI/                         # UI系统
-│   │   ├── UIManager.cs            # UI管理器（单例模式），管理所有UI面板切换
-│   │   ├── UIPanel.cs              # UI面板基类
-│   │   ├── GameSettingsData.cs     # 游戏设置数据
-│   │   ├── LevelItemUI.cs          # 关卡列表项UI组件
-│   │   └── Panels/                 # 各功能面板
-│   │       ├── MainMenuPanel.cs    # 主菜单面板
-│   │       ├── GameModePanel.cs    # 游戏模式选择面板
-│   │       ├── LevelBrowserPanel.cs # 关卡浏览面板
-│   │       ├── LevelChoicePanel.cs # 关卡选择面板
-│   │       ├── OnlineHallPanel.cs  # 在线大厅面板
-│   │       ├── SettingsPanel.cs    # 设置面板
-│   │       └── FinalScoreRatingPanel.cs # 最终评分面板
-│   └── Level_Broswer/              # 关卡浏览和管理
-│       ├── LevelData.cs            # 关卡数据结构
-│       └── LevelManager.cs         # 关卡管理器
-├── MapSaving/                      # 地图数据存储
-│   ├── Test_Map/                   # 测试地图
-│   └── level_*/                    # 各关卡地图数据（JSON格式）
-├── MusicTypeSaving/                # 谱面数据存储
-│   ├── Test_Level/                 # 测试关卡谱面
-│   └── level_*/                    # 各关卡谱面数据（JSON格式）
-├── HistoryScoreSaving/             # 历史成绩存储
-│   └── Level_Mode/                 # 各关卡历史最高分（JSON格式）
-├── Material/                       # 材质资源
-│   ├── Map_Material/               # 地图材质（基础地块、障碍地块、移动地块、终点地块）
-│   └── player/                     # 玩家材质（正常状态、受伤状态）
-└── Personal/                       # 个人资源文件
-    ├── Light/                      # Light主题资源
-    │   └── Music/                  # 音乐文件
-    └── ZuiMeng/                    # ZuiMeng主题资源
-        ├── Image/                  # 图片资源
-        ├── Music/                  # 音乐文件
-        └── Prefab/                 # 预制体
-            ├── GameControl/        # 游戏控制预制体
-            ├── Gamein/             # 游戏内预制体
-            ├── Map/                # 地图预制体
-            └── MusicTypeMaker/     # 谱面编辑器预制体
-```
+## 🌟 About Me
 
 
 
-## 如何使用
-
-### 运行项目
-
-1. **环境要求**
-   - Unity 6或更高版本
-   - Windows 操作系统
-
-2. **打开项目**
-   - 使用Unity Hub打开项目文件夹
-   - 等待Unity完成项目初始化
-
-3. **运行游戏**
-    手机包体：
-   - Dynamic Dancer\Build路径下，直接找到apk，在手机安装即可游玩。
-   Unity 编辑器内：
-   - 打开 `Menu` 场景
-   - 点击Unity编辑器顶部的播放按钮
+我是一名专注于游戏开发 / VR 开发 / 后端开发的开发者，拥有 XX 技术栈（如 Unity、C#、MongoDB、3D 建模等），以下是我完成的 5 个核心项目，涵盖 2D 在线游戏、动态视觉效果、数据库应用、VR 开发及 Unity 解谜游戏等方向。
 
 
-### 游戏操作
 
-- **主菜单**：选择游戏模式（单人模式、在线模式），目前只有GameChoice - level mode - Demo Level
-- **关卡选择**：浏览并选择要游玩的关卡
-- **游戏内**：
-  - 移动：WASD 或 方向键
-  - 节奏判定：在Note到达判定圈时按下对应四个按钮，可以向对应方向移动，编辑器（电脑内）可以qwas四个方向按键移动。
+## 📚 Project List
 
-### 编辑器使用
+### 1. CG_2DimensionOnlineGame (网络同步学习)
 
-#### 地图编辑器
-1. 进入 `EditorScene` 场景
-2. 使用工具栏选择地块类型
-3. 在场景中点击放置地块
-4. 保存地图数据
+#### 📥 下载链接
 
-#### 谱面编辑器
-1. 进入 `ChartEditorScene` 场景
-2. 选择音乐文件
-3. 播放音乐并录制节奏
-4. 调整Note位置和时间
-5. 保存谱面数据
+[科大网盘](https://pan.ustc.edu.cn/share/index/068350d988484bf2a5d6)
 
-## 开发状态
+#### 🚀 快速操作
 
-- 当前版本：开发中
-- 已完成功能：
-  - 基础游戏循环
-  - demo关卡
-  - 地图编辑器
-  - 谱面编辑器
-  - 评分系统
-  - UI系统
-- 待开发功能：
-  - 在线多人模式
-  - 更多音乐曲目
-  - 成就系统
+1. 点击网盘链接，下载项目完整压缩包；
+2. 解压后打开对应开发工程（如 Unity 工程双击`*.unitypackage`导入 / 打开`Assets`目录）；
+3. 运行工程主入口脚本 / 场景，即可启动 2D 在线游戏核心逻辑演示。
 
-## 项目亮点
+### 2. dynamic dancer （音游+地图）
 
-- 创新的节奏+地图玩法融合
-- 完整的编辑器工具链
-- 模块化的代码架构
-- 良好的扩展性设计
+#### 📥 下载链接
 
-## 联系方式
-宁尚哲 
-1114651650@qq.com
-本项目为Golden Eggs兼职开发项目。
+[科大网盘](https://pan.ustc.edu.cn/share/index/fce0c0e74695482d872f)
 
----
+#### 🚀 快速操作
 
-**注意**：本项目处于开发阶段，部分功能可能存在bug或未完成。
+1. 下载项目文件并解压；
+2. 运行指定可执行文件 / 打开开发环境工程；
+3. 按提示操作即可查看动态舞者视觉效果。
+
+### 3. mongoclub (Meta 游戏)
+
+#### 📥 下载链接
+
+[科大网盘](https://pan.ustc.edu.cn/share/index/1f565292ceef415e9575)
+
+#### 🚀 快速操作
+
+1. 下载项目源码 / 部署包并解压；
+2. 确保本地已安装 MongoDB 并启动服务；
+3. 配置项目中数据库连接信息；
+4. 运行项目主程序，测试数据增删改查等核心功能。
+
+### 4. VR hunyuan3d (VR 混元 3D 项目)
+
+#### 📥 下载链接
+
+[科大网盘](https://pan.ustc.edu.cn/share/index/df36e88bf1674759b2c1)
+
+#### 🚀 快速操作
+
+1. 下载 VR 项目工程包并解压；
+2. 配置 VR 开发环境（如 Unity + SteamVR/XR Toolkit）；
+3. 导入工程文件，连接 VR 设备并完成驱动配置；
+4. 运行 VR 场景，体验 3D 交互效果。
+
+### 5. unity demo (Endless Escape 无尽逃脱)
+
+#### 📥 下载链接
+
+[科大网盘](https://pan.ustc.edu.cn/share/index/48d20c75f29140cab7d6)
+
+#### 🚀 快速操作
+
+1. 下载 Unity 演示项目包并解压；
+2. 用对应版本 Unity 打开项目文件夹；
+3. 打开`Main`场景，点击运行按钮；
+4. 通过键盘 / 鼠标操作体验 “无尽逃脱” 解谜 demo。
+
+## 📝 Notes
+
+- 所有项目可以直接在build找到包体游玩，也可以本地安装对应开发环境 / 依赖库（如 Unity、VR 驱动配置等）；
+- 使用的是我们学校的网盘，无需登录高速下载。若网盘链接访问异常，请检查网络或联系我更新链接。
+
