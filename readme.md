@@ -25,8 +25,8 @@ Welcome to MyGameProjects! This document outlines the download and quick operati
 #### 🚀 快速操作
 
 1. 下载项目文件并解压；
-2. 运行指定可执行文件 / 打开开发环境工程；
-3. 按提示操作即可查看动态舞者视觉效果。
+2. 可以直接去build里面找到apk手机下载。
+3. 横屏游玩，玩法实现了部分，请在具体文档查看。
 
 ### 2. CG_2DimensionOnlineGame (网络同步学习)
 
@@ -41,8 +41,6 @@ Welcome to MyGameProjects! This document outlines the download and quick operati
 1. 点击网盘链接，下载项目完整压缩包；
 2. 阅读项目的readme，需要先开服务器，再开客户端游玩。
 
-1. 
-
 ### 3. mongoclub （Untitled Test）
 
 《非暴露测试》是一款创新的**Meta类**游戏，玩家从2D场景开始游玩，意外卡bug进入3D世界进行探索。本项目采用Unity引擎开发，融合了2D与3D双重视角，包含多样化的小游戏系统和沉浸式交互体验。
@@ -56,9 +54,8 @@ Welcome to MyGameProjects! This document outlines the download and quick operati
 #### 🚀 快速操作
 
 1. 下载项目源码 / 部署包并解压；
-2. 确保本地已安装 MongoDB 并启动服务；
-3. 配置项目中数据库连接信息；
-4. 运行项目主程序，测试数据增删改查等核心功能。
+2. 直接在build里面找到包体打开即可游玩。
+3. 详情见具体项目readme。
 
 ### 4. VR hunyuan3d (VR 混元 3D 项目)
 
@@ -69,13 +66,12 @@ Welcome to MyGameProjects! This document outlines the download and quick operati
 #### 🚀 快速操作
 
 1. 下载 VR 项目工程包并解压；
-2. 配置 VR 开发环境（如 Unity + SteamVR/XR Toolkit）；
-3. 导入工程文件，连接 VR 设备并完成驱动配置；
-4. 运行 VR 场景，体验 3D 交互效果。
+2. 考虑到没有VR设备，可以参考介绍视频。
+3. 导入工程文件，客户端体验需要VR设备，详情见具体项目readme。
 
 ### 5. unity demo (Endless Escape 无尽逃脱)
 
-这是一款第一人称解密逃出密室游戏,玩家在逃脱过程中意外触发无尽循环。本项目为7天GameJam开发作品,实现了基础玩法流程和核心交互系统。
+这是一款第一人称解密逃出密室游戏,玩家在逃脱过程中意外触发无尽循环。本项目为两年前（2024年）初学Unity后，7天GameJam开发作品,实现了基础玩法流程和核心交互系统。
 
 #### 📥 下载链接
 
@@ -84,9 +80,8 @@ Welcome to MyGameProjects! This document outlines the download and quick operati
 #### 🚀 快速操作
 
 1. 下载 Unity 演示项目包并解压；
-2. 用对应版本 Unity 打开项目文件夹；
-3. 打开`Main`场景，点击运行按钮；
-4. 通过键盘 / 鼠标操作体验 “无尽逃脱” 解谜 demo。
+2. 直接在build里面打开游戏
+3. 交互与引导可能不够完善。
 
 ## 📝 Notes
 
