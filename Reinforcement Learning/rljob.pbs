@@ -1,0 +1,15 @@
+#PBS    -N  rljob
+#PBS    -o  /ghome/<你的用户名>/rl/$PBS_JOBID.out
+#PBS    -e  /ghome/<你的用户名>/rl/$PBS_JOBID.err
+#PBS    -l nodes=1:gpus=1:S
+#PBS    -r y
+cd $PBS_O_WORKDIR
+echo Time is `date`
+echo Directory is $PWD
+echo This job runs on following nodes:
+echo -n "Node:"
+cat $PBS_NODEFILE
+echo -n "Gpus:"
+cat $PBS_GPUFILE
+echo "CUDA_VISIBLE_DEVICES:"$CUDA_VISIBLE_DEVICES
+startdocker -P /ghome/<你的用户名> -c "/usr/bin/python /ghome/<你的用户名>/rl/train.py" etcis:5000/isfishingsnow/ustcai:v2.0

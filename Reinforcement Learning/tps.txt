@@ -1,0 +1,21 @@
+done
+#
+# To activate this environment, use
+#
+#     $ conda activate rl_env
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+远程上传：
+scp -P 59099 E:\LearnAI\aigamelearning\* PB24000099@202.38.88.66:~/AIgame
+#查看正在运行的容器名称，获取<docker image name>
+sudo docker ps
+#执行命令停止容器：sudo docker stop<docker image name>
+sudo docker stop\
+
+连接：
+[PB24000099@gwork ~]$ ssh PB24000099@G151
+3、开一个用于测试的Docker容器
+startdocker -u "-it" -c /bin/bash etcis:5000/isfishingsnow/ustcai:v2.0
