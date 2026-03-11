@@ -38,6 +38,8 @@ Welcome to MyGameProjects! This document outlines the download and quick operati
 
 #### 🚀 快速操作
 
+（建议看实例文档，本地下载体验可能需要处理ipv6和域名解析问题）
+
 1. 点击网盘链接，下载项目完整压缩包；
 2. 阅读项目的readme，需要先开服务器，再开客户端游玩。
 
@@ -65,6 +67,8 @@ Welcome to MyGameProjects! This document outlines the download and quick operati
 
 #### 🚀 快速操作
 
+（**强烈建议看实例文档和解压后视频的效果！！！**，由于没有上传hunyuan3d模型，服务端没法部署，不仅需要处理ipv6和域名解析问题，还没有VR设备配置）
+
 1. 下载 VR 项目工程包并解压；
 2. 考虑到没有VR设备，可以参考介绍视频。
 3. 导入工程文件，客户端体验需要VR设备，详情见具体项目readme。
@@ -82,6 +86,20 @@ Welcome to MyGameProjects! This document outlines the download and quick operati
 1. 下载 Unity 演示项目包并解压；
 2. 直接在build里面打开游戏
 3. 交互与引导可能不够完善。
+
+### 6.OnlineGame_Socket
+
+多人联机Demo开发，聚焦Socket通信与数据同步，C#实现服务器搭建至多人交互全流程。
+
+📥 下载链接
+
+[科大网盘](https://pan.ustc.edu.cn/share/index/c9c99b3311054d998194)
+
+🚀 快速操作（建议看实例文档，本地下载体验较繁琐）
+
+1.下载并解压，打开Socket_Server开服。（需要配置sql bench，域名解析ipv6）
+
+2.确认开服成功后，build文件夹打开客户端连接。
 
 ## 📝 Notes
 
