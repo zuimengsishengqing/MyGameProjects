@@ -8,7 +8,10 @@ Welcome to MyGameProjects! This document outlines the download and quick operati
 
 擅长Unity引擎开发，VR、AR创意实践应用。目前在Golden Eggs兼职做抖音、微信小游戏开发-程序。曾获全国大学生数学竞赛安徽省三等奖，参与TapTap聚光灯等多个GameJam活动，并在腾讯开局一课程序结课，参与了2025美国大学生数学建模竞赛。专注AI与游戏算法结合，致力于用技术实现创新交互体验。
 
-以下是我的 5 个核心项目，涵盖网络同步框架、节奏音乐类玩法、TapTap聚光灯GameJam、VR 开发及第一人称3d解谜游戏等方向。
+我的CG（计算机图形学）项目在以下链接：
+[CG_hw](https://github.com/zuimengsishengqing/CG2026_Hw_73)
+
+以下是我的 5 个游戏项目，涵盖网络同步框架、节奏音乐类玩法、TapTap聚光灯GameJam、VR 开发及第一人称3d解谜游戏等方向。
 
 
 
